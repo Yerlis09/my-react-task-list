@@ -41,11 +41,11 @@ function App() {
   return (
     <div>
       <Header />
-      <TaskList />
-      <Task />
-      <Task />
-      <Task />
-      <Task />
+      <TaskList list={taskList}/>
+      <div>
+        <p>Tienes {2} tareas pendientes</p>
+        <button onClick={handleClear}>Limpiar todo</button>
+      </div>
     </div>
   )
 }
