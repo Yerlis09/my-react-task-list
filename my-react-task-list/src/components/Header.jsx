@@ -1,8 +1,8 @@
 export default function Header() {
     return (
-        <h2>
+        <h1>
             Todo App
-        </h2>
+        </h1>
     );
 
 }
