@@ -1,11 +1,17 @@
-export const Task = () => {
-    return (
-        <li>
-            <label>
-                <input type="checkbox" id="cbox1" value="first_checkbox" /> Este es mi primer
-                checkbox
-            </label>
+export default function Task(props) { // recibimos por parametros las tareas como propiedad
+    const { title } = props;
 
-        </li>
+    //Esta función va a responder cada vez que den click en el check
+    const handleClickCheck = () => {
+        console.log(`Check: ${title}`);
+    };
+
+    return (
+        <div>
+            <li>
+                <input type="checkbox" onClick={handleClickCheck} />
+                <span>{title}</span>
+            </li>
+        </div>
     );
 }
