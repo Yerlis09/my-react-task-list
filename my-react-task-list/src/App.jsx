@@ -32,8 +32,12 @@ const taskList = [
 
 ];
 
-
 function App() {
+  //Función que responde al boton de borrar todo
+  function handleClear() {
+    console.log("Limpiar Todo");
+  };
+
   return (
     <div>
       <Header />
