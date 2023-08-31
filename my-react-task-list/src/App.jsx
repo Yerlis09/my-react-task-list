@@ -1,13 +1,12 @@
-import { useState } from 'react'
 import './App.css'
 import Header from './components/Header'
-import {TaskList} from './components/TaskList'
+import TaskList from './components/TaskList';
 
 
 const taskList = [
   {
     id:1001,
-    title:"Realizar el proyecto integrador 2 del modulo de react",
+    title:"Realizar el proyecto integrador 2",
     stat: false
   },
 

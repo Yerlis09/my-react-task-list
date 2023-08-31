@@ -4,5 +4,4 @@ export default function Header() {
             Todo App
         </h1>
     );
-
-}
+};
